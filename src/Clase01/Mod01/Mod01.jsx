@@ -85,7 +85,7 @@ Visual Studio Code es un editor de código fuente desarrollado por Microsoft par
                 </Tarea>
                 <Tarea
                     language="bash"
-                    description={'(https://www.sourcetreeapp.com/)[https://www.sourcetreeapp.com/]'}
+                    description={'[https://www.sourcetreeapp.com/](https://www.sourcetreeapp.com/)'}
                     title="Instalar Sourcetree"
                     number="5"
                 ></Tarea>
