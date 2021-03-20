@@ -38,7 +38,7 @@ npm init
 
 // package.json
 // agregar en script
-"start": "index.js"
+"start": "node index.js"
 
 // index.js
 console.log('Hola mundo');

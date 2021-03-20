@@ -216,6 +216,27 @@ const Mod02 = () => {
                     title="Clases y herencia"
                     number="7"
                 />
+                <Tarea
+                    language="js"
+                    code={`
+const expresion = 12 + 12;
+\`texto de cadena de caracteres\`
+
+\`línea 1 de la cadena de caracteres
+línea 2 de la cadena de caracteres\`
+
+\`texto de cadena de caracteres $\{expresión} texto adicional\`
+
+\`texto de cadena de caracteres $\{expresión} texto adicional\`
+`.trim()}
+                    title="Plantillas literales (plantillas de cadenas)"
+                    description={`
+Las plantillas literales son cadenas literales que habilitan el uso de expresiones incrustadas. Con ellas, es posible utilizar cadenas de caracteres de más de una línea, y funcionalidades de interpolación de cadenas de caracteres.
+
+En ediciones anteriores de la especificación ES2015, solían llamarse "plantillas de cadenas de caracteres".
+                    `}
+                    number="8"
+                />
             </div>
         </div>
     )
