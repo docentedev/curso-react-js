@@ -6,8 +6,8 @@ const desc01 = `
 - Iniciar un proyecto npm
 - Crear un proyecto GIT
 - Agregar orígen al proyecto npm
-- Agregars index.js
-- Agregars index2.js
+- Agregar index.js
+- Agregar index2.js
 - Agregar tarea \`start\` que ejecute index.js
 - Agregar tarea \`start2\` que ejecute index2.js
 - Crear una clase \`Persona\` que extienda de otra clase llamada \`SerVivo\`
