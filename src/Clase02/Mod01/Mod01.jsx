@@ -134,7 +134,7 @@ const title = 'Foo'
 const handleWelcome = () => {
     alert('Hola!')
 };
-<button onclick="welcome()">Click here!</button>    
+<button onclick="handleWelcome()">Click here!</button>    
 \`\`\`
 `}</ReactMarkdown>
                                 </td>
@@ -144,7 +144,7 @@ const handleWelcome = () => {
 const handleWelcome = () => {
     alert('Hola!')
 };
-<button onClick={welcome}>Click here!</button>    
+<button onClick={handleWelcome}>Click here!</button>    
 \`\`\`
 `}</ReactMarkdown>
                                 </td>
