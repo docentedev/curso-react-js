@@ -93,6 +93,38 @@ src
 \`\`\`
 `
 
+const codeOldComponents = `
+import { Component } from 'react'
+
+class ComponenteBasadoEnClase extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: 'ol-state-value',
+        }
+        // Binding this keyword
+        this.handleClick = this.handleClick.bind(this)
+    }
+
+    handleClick() {
+        this.setState({ name: 'new-state-value' })
+    }
+
+    render() {
+
+        return (
+            <>
+                <button onClick={this.handleClick}>Change Name Value</button>
+                <div>{this.state.name}</div>
+            </>
+        )
+    }
+}
+
+export default ComponenteBasadoEnClase
+`
+
 const Mod02 = () => {
 
     return (
@@ -108,15 +140,22 @@ const Mod02 = () => {
                 />
                 <Tarea
                     language="jsx"
+                    code={codeOldComponents.trim()}
+                    title="Componentes Basados en Clase"
+                    number="2"
+                    description={'Aun que ya no se recomienda utilizar, este seria un ejemplo de Componente Basado en Clase'}
+                />
+                <Tarea
+                    language="jsx"
                     code={code02.trim()}
                     title="Diseño de software basado en Composición sobre Herencia"
-                    number="2"
+                    number="3"
                     description={''}
                 />
                 <Tarea
                     language="jsx"
                     title="Container v/s Component"
-                    number="3"
+                    number="4"
                     description={desc03.trim()}
                 />
             </div>

@@ -3,7 +3,7 @@ import Tarea from '../../components/Tarea'
 
 const title = 'INTRODUCCIÓN A REACT.JS'
 const code01 = `
-npm create-react-app <project_nombre> # crea un nuevo proyecto ReactJs
+create-react-app <project_nombre> # crea un nuevo proyecto ReactJs
 npm run start # inicia applicacion en puerto 3000
 npm run build # genera los archivos estaticos para desplegar en un servidor productivo
 npm run test # ejecuta las pruebas
@@ -13,6 +13,19 @@ const desc02 = `
 React acepta el hecho de que la lógica de renderizado está intrínsecamente unida a la lógica de la interfaz de usuario: cómo se manejan los eventos, cómo cambia el estado con el tiempo y cómo se preparan los datos para su visualización.
 
 En lugar de separar artificialmente tecnologías poniendo el maquetado y la lógica en archivos separados, React separa intereses con unidades ligeramente acopladas llamadas “componentes” que contienen ambas. Volveremos a los componentes en otra sección, pero si aún no te sientes cómodo maquetando en JS, esta charla podría convencerte de lo contrario.
+`
+
+const codeCssModule = `
+# Foo.css
+.Header {
+    color: red;
+}
+
+import styles from './Foo.css'
+
+<div>
+    <header className={styles.Header}>Header</header>
+</div>
 `
 
 const Mod01 = () => {
@@ -162,15 +175,21 @@ const handleWelcome = () => {
                 />
                 <Tarea
                     language="jsx"
-                    code={`import './Image.jpg'`.trim()}
-                    title="Utilizar Imágenes"
+                    code={codeCssModule.trim()}
+                    title="Utilizar CSS Module (React 17)"
                     number="4.2"
                 />
                 <Tarea
                     language="jsx"
-                    code={`import './Image.svg'`.trim()}
-                    title="Utilizar SVG"
+                    code={`import Image from './Image.jpg'`.trim()}
+                    title="Utilizar Imágenes"
                     number="4.3"
+                />
+                <Tarea
+                    language="jsx"
+                    code={`import Image from './Image.svg'`.trim()}
+                    title="Utilizar SVG"
+                    number="4.4"
                 />
             </div>
         </div>
