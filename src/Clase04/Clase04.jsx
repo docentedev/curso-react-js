@@ -3,9 +3,9 @@ import Mod02 from "./Mod02/Mod02"
 import Mod03 from "./Mod03/Mod03"
 import Mod04 from "./Mod04/Mod04"
 
-const title = '1º SESIÓN :NIVELACIÓN ES6, JAVASCRIPT FUNCIONAL'
+const title = '4º SESIÓN :PROYECTO FINAL'
 
-const Clase01 = () => {
+const Clase04 = () => {
 
     return (
         <div>
@@ -34,4 +34,4 @@ const Clase01 = () => {
     )
 }
 
-export default Clase01
+export default Clase04
