@@ -40,96 +40,97 @@ const Mod01 = () => {
                     title="Diferencias notables con HTML"
                     number="3"
                 >
-                    <table className="table table-striped table-hover table-responsive">
-                        <thead>
-                            <th>Descripción</th>
-                            <th>HTML</th>
-                            <th>JSX</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    Los estilos son un <code>json</code> y con formato <code>camelCase</code>
-                                </td>
-                                <td>
-                                    <ReactMarkdown>{`
+                    <div className="table-responsive">
+                        <table className="table table-striped table-hover">
+                            <thead>
+                                <th>Descripción</th>
+                                <th>HTML</th>
+                                <th>JSX</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Los estilos son un <code>json</code> y con formato <code>camelCase</code>
+                                    </td>
+                                    <td>
+                                        <ReactMarkdown>{`
 \`\`\`html
 <div style="font-size: 12px;color:red">Hola!</div>
 \`\`\`
 `}</ReactMarkdown>
-                                </td>
-                                <td>
-                                    <ReactMarkdown>{`
+                                    </td>
+                                    <td>
+                                        <ReactMarkdown>{`
 \`\`\`jsx
 <div style={{ fontSize: '12px', color: 'red' }}>Hola!</div>
 \`\`\`
 `}</ReactMarkdown>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    clases css con<code> className</code>
-                                </td>
-                                <td>
-                                    <ReactMarkdown>{`
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        clases css con<code> className</code>
+                                    </td>
+                                    <td>
+                                        <ReactMarkdown>{`
 \`\`\`html
 <div class="mt-2 col-12">Hola!</div>
 \`\`\`
 `}</ReactMarkdown>
-                                </td>
-                                <td>
-                                    <ReactMarkdown>{`
+                                    </td>
+                                    <td>
+                                        <ReactMarkdown>{`
 \`\`\`jsx
 <div className="mt-2 col-12">Hola!</div>
 \`\`\`
 `}</ReactMarkdown>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Cierre de TAG
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Cierre de TAG
-                                </td>
-                                <td>
-                                    <ReactMarkdown>{`
+                                    <td>
+                                        <ReactMarkdown>{`
 \`\`\`html
 <input value="" name=""><br>
 \`\`\`
 `}</ReactMarkdown>
-                                </td>
-                                <td>
-                                    <ReactMarkdown>{`
+                                    </td>
+                                    <td>
+                                        <ReactMarkdown>{`
 \`\`\`jsx
 <input value="" name="" /><br />
 \`\`\`
 `}</ReactMarkdown>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Valor en input debe ser una variable
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Valor en input debe ser una variable
-                                </td>
-                                <td>
-                                    <ReactMarkdown>{`
+                                    <td>
+                                        <ReactMarkdown>{`
 \`\`\`html
 <input value="" name=""><br>
 \`\`\`
 `}</ReactMarkdown>
-                                </td>
-                                <td>
-                                    <ReactMarkdown>{`
+                                    </td>
+                                    <td>
+                                        <ReactMarkdown>{`
 \`\`\`jsx
 const title = 'Foo'
 <input value={title} name="" /><br />
 \`\`\`
 `}</ReactMarkdown>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Eventos son una función y la propiedad se escribe con <code>camelCase</code>
-                                </td>
-                                <td>
-                                    <ReactMarkdown>{`
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Eventos son una función y la propiedad se escribe con <code>camelCase</code>
+                                    </td>
+                                    <td>
+                                        <ReactMarkdown>{`
 \`\`\`html
 const handleWelcome = () => {
     alert('Hola!')
@@ -137,9 +138,9 @@ const handleWelcome = () => {
 <button onclick="handleWelcome()">Click here!</button>    
 \`\`\`
 `}</ReactMarkdown>
-                                </td>
-                                <td>
-                                    <ReactMarkdown>{`
+                                    </td>
+                                    <td>
+                                        <ReactMarkdown>{`
 \`\`\`jsx
 const handleWelcome = () => {
     alert('Hola!')
@@ -147,10 +148,11 @@ const handleWelcome = () => {
 <button onClick={handleWelcome}>Click here!</button>    
 \`\`\`
 `}</ReactMarkdown>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </Tarea>
                 <Tarea
                     language="jsx"
