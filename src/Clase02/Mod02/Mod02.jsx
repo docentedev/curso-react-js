@@ -143,7 +143,7 @@ const Mod02 = () => {
                     code={codeOldComponents.trim()}
                     title="Componentes Basados en Clase"
                     number="2"
-                    description={'Aun que ya no se recomienda utilizar, este seria un ejemplo de Componente Basado en Clase'}
+                    description={'Aunque ya no se recomienda utilizar, este seria un ejemplo de Componente Basado en Clase'}
                 />
                 <Tarea
                     language="jsx"
