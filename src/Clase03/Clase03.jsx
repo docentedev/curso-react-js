@@ -1,7 +1,7 @@
-import Mod01 from "./Mod01/Mod01"
-import Mod02 from "./Mod02/Mod02"
-import Mod03 from "./Mod03/Mod03"
-import Mod04 from "./Mod04/Mod04"
+import Mod01 from './Mod01/Mod01'
+import Mod02 from './Mod02/Mod02'
+import Mod03 from './Mod03/Mod03'
+import Mod04 from './Mod04/Mod04'
 
 const Clase03 = ({ info }) => {
     return (
