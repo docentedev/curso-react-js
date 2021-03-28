@@ -1,6 +1,6 @@
 import Tarea from '../../components/Tarea'
 
-const title = 'CONFIGURACIÓN ENTORNO DE TRABAJO'
+const title = 'PERSISTENCIA DE DATOS'
 
 const Mod03 = () => {
 
