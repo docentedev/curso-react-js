@@ -24,7 +24,7 @@ jobs:
           npm install
           npm run deploy
       - name: Deploy
-        uses: DocenteDev/github-pages-deploy-action@releases/v3
+        uses: docentedev/curso-react-js
         with:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           BRANCH: gh-pages
