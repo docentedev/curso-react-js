@@ -11,7 +11,7 @@ import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/curso-react-js">
       <App />
     </Router>
   </React.StrictMode>,
