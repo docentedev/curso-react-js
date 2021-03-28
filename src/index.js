@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {
-  BrowserRouter as Router,
+  // BrowserRouter
+  HashRouter as Router,
 } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'highlight.js/styles/dracula.css'
@@ -11,7 +12,7 @@ import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename="/curso-react-js">
+    <Router basename="">
       <App />
     </Router>
   </React.StrictMode>,
