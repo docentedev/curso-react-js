@@ -42,7 +42,7 @@ const handleChange = (event) => {
 const desc04 = `
 ### Instalar y agregar bootstrap
 - \`npm install bootstrap@5.0.0-beta2\`
-- recordear que import de modulos siempre van primero
+- recordar que import de modulos siempre van primero
 - en index.js agregar luego de los import \`import 'bootstrap/dist/css/bootstrap.min.css'\`
 `
 

@@ -41,6 +41,64 @@ function Example() {
 }
 `
 
+const code04 = `
+const refContainer = useRef(initialValue);
+
+function TextInputWithFocusButton() {
+  const inputEl = useRef(null);
+  const onButtonClick = () => {
+    // \`current\` apunta al elemento de entrada de texto montado
+    inputEl.current.focus();
+  };
+  return (
+    <>
+      <input ref={inputEl} type="text" />
+      <button onClick={onButtonClick}>Focus the input</button>
+    </>
+  );
+}
+`
+
+const code05 = `
+const themes = {
+  light: {
+    foreground: "#000000",
+    background: "#eeeeee"
+  },
+  dark: {
+    foreground: "#ffffff",
+    background: "#222222"
+  }
+};
+
+const ThemeContext = React.createContext(themes.light);
+
+function App() {
+  return (
+    <ThemeContext.Provider value={themes.dark}>
+      <Toolbar />
+    </ThemeContext.Provider>
+  );
+}
+
+function Toolbar(props) {
+  return (
+    <div>
+      <ThemedButton />
+    </div>
+  );
+}
+
+function ThemedButton() {
+  const theme = useContext(ThemeContext);
+  return (
+    <button style={{ background: theme.background, color: theme.foreground }}>
+      I am styled by theme context!
+    </button>
+  );
+}
+`
+
 const Mod03 = () => {
 
     return (
@@ -67,6 +125,20 @@ const Mod03 = () => {
                     title="useEffect"
                     number="1.3"
                     description={'El Hook de efecto te permite llevar a cabo efectos secundarios en componentes funcionales'}
+                />
+                <Tarea
+                    language="jsx"
+                    code={code04.trim()}
+                    title="useRef"
+                    number="1.4"
+                    description={'useRef devuelve un objeto ref mutable cuya propiedad .current se inicializa con el argumento pasado (initialValue). El objeto devuelto se mantendrá persistente durante la vida completa del componente.'}
+                />
+                <Tarea
+                    language="jsx"
+                    code={code05.trim()}
+                    title="useContext"
+                    number="1.5"
+                    description={'Acepta un objeto de contexto (el valor devuelto de React.createContext) y devuelve el valor de contexto actual. El valor actual del contexto es determinado por la propiedad value del <MyContext.Provider> ascendentemente más cercano en el árbol al componente que hace la llamada.'}
                 />
             </div>
         </div>
