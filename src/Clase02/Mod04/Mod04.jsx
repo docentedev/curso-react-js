@@ -41,9 +41,34 @@ const handleChange = (event) => {
 
 const desc04 = `
 ### Instalar y agregar bootstrap
+
 - \`npm install bootstrap@5.0.0-beta2\`
 - recordar que import de modulos siempre van primero
 - en index.js agregar luego de los import \`import 'bootstrap/dist/css/bootstrap.min.css'\`
+- Reglas
+    - identar código
+    - Utilzar la siguiente estructura de directorios
+\`\`\`
+src
+ |- index.js
+ |- App.js
+ |- components
+ |   |- item-primary
+ |       |- ItemPrimary.jsx
+ |       |- ItemPrimary.css
+ |- container
+ |   |- home
+ |       |- Home.jsx
+ |       |- Home.css
+ \`\`\`
+ - Crear componentes
+    - Footer
+    - Heaeder
+    - Menu
+    - SectionPrincipal
+    - SectionSecondary
+    - ContactForm
+ - Utilizar al menos un componente con \`css modules\`
 `
 
 const Mod04 = () => {

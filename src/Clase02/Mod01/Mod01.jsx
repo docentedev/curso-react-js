@@ -56,9 +56,11 @@ const Mod01 = () => {
                     <div className="table-responsive">
                         <table className="table table-striped table-hover">
                             <thead>
-                                <th>Descripción</th>
-                                <th>HTML</th>
-                                <th>JSX</th>
+                                <tr>
+                                    <th>Descripción</th>
+                                    <th>HTML</th>
+                                    <th>JSX</th>
+                                </tr>
                             </thead>
                             <tbody>
                                 <tr>
