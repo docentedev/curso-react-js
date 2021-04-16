@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-## API MOCK
+## API MOCK
 
 - https://github.com/docentedev/api-mock
 
