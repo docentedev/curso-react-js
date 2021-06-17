@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+- npx create-react-app example-react-context --template typescript --use-npm
+
 ## API MOCK
 
 - https://github.com/docentedev/api-mock

@@ -3,7 +3,7 @@ import Tarea from '../../components/Tarea'
 const title = 'CONFIGURACIÓN ENTORNO DE TRABAJO'
 
 const desc01 = `
-Es recomendado siempre instalar versiones LTS (Long Term Support) en español soporte a largo plazo
+Siempre instalar versiones con  soporte a largo plazo (LTS -Long Term Support)
 
 **Node.js** es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor basado en el lenguaje de programación JavaScript, asíncrono, con E/S de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google.
 
@@ -11,9 +11,9 @@ Es recomendado siempre instalar versiones LTS (Long Term Support) en español so
 `
 
 const desc03 = `
-GitHub es una forja (plataforma de desarrollo colaborativo) para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador. El software que opera GitHub fue escrito en Ruby on Rails. Desde enero de 2010, GitHub opera bajo el nombre de GitHub, Inc. Anteriormente era conocida como Logical Awesome LLC. El código de los proyectos alojados en GitHub se almacena típicamente de forma pública.
+GitHub es una forja (plataforma de desarrollo colaborativo) para alojar proyectos utilizando el sistema de control de versiones Git.
 
-[https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
+[https://github.com](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
 `
 
 const code05 = `
@@ -85,15 +85,9 @@ Visual Studio Code es un editor de código fuente desarrollado por Microsoft par
                 </Tarea>
                 <Tarea
                     language="bash"
-                    description={'[https://www.sourcetreeapp.com/](https://www.sourcetreeapp.com/)'}
-                    title="Instalar Sourcetree"
-                    number="5"
-                ></Tarea>
-                <Tarea
-                    language="bash"
                     code={'npm install -g create-react-app'}
                     title="Instalar Create React App"
-                    number="6"
+                    number="5"
                     description={'[https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)'}
                 ></Tarea>
                 <Tarea
@@ -101,7 +95,7 @@ Visual Studio Code es un editor de código fuente desarrollado por Microsoft par
                     code={code05.trim()}
                     title="Primeros pasos con GIT"
                     description={'[https://www.atlassian.com/es/git/tutorials/learn-git-with-bitbucket-cloud](https://www.atlassian.com/es/git/tutorials/learn-git-with-bitbucket-cloud)'}
-                    number="7"
+                    number="6"
                 ></Tarea>
             </div>
         </div>

@@ -4,7 +4,7 @@ const Tarea = ({ language, code, title, number, description, children }) => {
     return (
         <div>
             {title && (
-                <h3><span className="badge bg-secondary">{number})</span> {title}</h3>
+                <h3><span className="badge rounded-pill bg-primary">{number}</span> {title}</h3>
             )}
             <ReactMarkdown>{description}</ReactMarkdown>
             {code && (

@@ -30,7 +30,7 @@ function probandoMap () {
 }
 probandoMap()
 \`\`\`
-- Subir código a github y compartir link del proyecto por el grupo e WhatsApp
+- Subir código a github y compartir link del proyecto por el grupo del curso
 `
 
 const Mod04= () => {

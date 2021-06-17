@@ -60,43 +60,39 @@ function TextInputWithFocusButton() {
 `
 
 const code05 = `
-const themes = {
-  light: {
-    foreground: "#000000",
-    background: "#eeeeee"
-  },
-  dark: {
-    foreground: "#ffffff",
-    background: "#222222"
-  }
-};
+// ThemeContext.tsx
+import { createContext, useState } from 'react'
 
-const ThemeContext = React.createContext(themes.light);
+/* Definimos tipos basicos */
+type Theme = 'dark' | 'light'
 
-function App() {
-  return (
-    <ThemeContext.Provider value={themes.dark}>
-      <Toolbar />
-    </ThemeContext.Provider>
-  );
+interface IThemeContext {
+    theme: Theme
+    setTheme: (theme: Theme) => void,
 }
 
-function Toolbar(props) {
-  return (
-    <div>
-      <ThemedButton />
-    </div>
-  );
+/* Creamos un contexto tipado */
+const ThemeContext = createContext<IThemeContext>({
+    theme: 'light',
+    setTheme: (_theme) => { },
+})
+
+/* generamos un proveedor que mantenga */
+/* el estado del contexto */
+export const ThemeProvider = ({ children }: { children: JSX.Element }) => {
+    const [theme, setTheme] = useState<Theme>('light')
+    return (
+        <ThemeContext.Provider value={{
+            theme,
+            setTheme,
+        }}>
+            {children}
+        </ThemeContext.Provider>
+    )
 }
 
-function ThemedButton() {
-  const theme = useContext(ThemeContext);
-  return (
-    <button style={{ background: theme.background, color: theme.foreground }}>
-      I am styled by theme context!
-    </button>
-  );
-}
+/* Exportamos el contexto */
+export default ThemeContext
 `
 
 const Mod03 = () => {
@@ -138,7 +134,60 @@ const Mod03 = () => {
                     code={code05.trim()}
                     title="useContext"
                     number="1.5"
-                    description={'Acepta un objeto de contexto (el valor devuelto de React.createContext) y devuelve el valor de contexto actual. El valor actual del contexto es determinado por la propiedad value del <MyContext.Provider> ascendentemente más cercano en el árbol al componente que hace la llamada.'}
+                    description={`Acepta un objeto de contexto (el valor devuelto de React.createContext) y devuelve el valor de contexto actual.
+El valor actual del contexto es determinado por la propiedad value del \`<MyContext.Provider>\`
+ascendentemente más cercano en el árbol al componente que hace la llamada.
+
+[ejemplo](https://github.com/docentedev/example-react-context)
+`}
+                />
+                <Tarea
+                    language="jsx"
+                    code={`
+// App.tsx
+import './App.css'
+import Card from './components/card/Card'
+import { ThemeProvider } from './contexts/ThemeContext'
+
+function App() {
+  return (
+    <ThemeProvider>
+      <div className="App">
+        <Card />
+      </div>
+    </ThemeProvider>
+  )
+}
+
+export default App`.trim()}
+                />
+                <Tarea
+                    language="jsx"
+                    code={`
+// Card.tsx
+import { useContext } from 'react'
+import ThemeContext from '../../contexts/ThemeContext'
+
+const Card = () => {
+    const ctx = useContext(ThemeContext)
+
+    const handleToggleTheme = () => {
+        ctx.setTheme(ctx.theme === 'dark' ? 'light' : 'dark')
+    }
+    return (
+        <div className={\`card theme-$\{ctx.theme}\`}>
+            <div>
+                {ctx.theme}
+            </div>
+            <div>
+                <button onClick={handleToggleTheme}>Toggle Theme</button>
+            </div>
+        </div>
+    )
+}
+
+export default Card
+`.trim()}
                 />
             </div>
         </div>
