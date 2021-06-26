@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/curso-react-js/static/css/main.f3ea8bb5.chunk.css",
+    "main.js": "/curso-react-js/static/js/main.1d9b7883.chunk.js",
+    "main.js.map": "/curso-react-js/static/js/main.1d9b7883.chunk.js.map",
+    "runtime-main.js": "/curso-react-js/static/js/runtime-main.856548a6.js",
+    "runtime-main.js.map": "/curso-react-js/static/js/runtime-main.856548a6.js.map",
+    "static/css/2.bec373a6.chunk.css": "/curso-react-js/static/css/2.bec373a6.chunk.css",
+    "static/js/2.b9b31c86.chunk.js": "/curso-react-js/static/js/2.b9b31c86.chunk.js",
+    "static/js/2.b9b31c86.chunk.js.map": "/curso-react-js/static/js/2.b9b31c86.chunk.js.map",
+    "static/js/3.729d69ae.chunk.js": "/curso-react-js/static/js/3.729d69ae.chunk.js",
+    "static/js/3.729d69ae.chunk.js.map": "/curso-react-js/static/js/3.729d69ae.chunk.js.map",
+    "index.html": "/curso-react-js/index.html",
+    "static/css/2.bec373a6.chunk.css.map": "/curso-react-js/static/css/2.bec373a6.chunk.css.map",
+    "static/css/main.f3ea8bb5.chunk.css.map": "/curso-react-js/static/css/main.f3ea8bb5.chunk.css.map",
+    "static/js/2.b9b31c86.chunk.js.LICENSE.txt": "/curso-react-js/static/js/2.b9b31c86.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/curso-react-js/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.856548a6.js",
+    "static/css/2.bec373a6.chunk.css",
+    "static/js/2.b9b31c86.chunk.js",
+    "static/css/main.f3ea8bb5.chunk.css",
+    "static/js/main.1d9b7883.chunk.js"
+  ]
+}
